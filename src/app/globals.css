@@ -38,16 +38,232 @@ h1{
 }
 
 
+.Container {
 
-.Container{
-  margin-top: 30px;
   display: flex;
-  justify-content: space-around;
-flex-direction: column;
-align-items: center;
+  justify-content: space-around; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  border: 1px solid black;
+  flex-direction: column;
+  width: 40%;
+  height: 40vh;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  
 }
 
 .time{
   margin: 30px;
 }
+
+
+.Container-Body{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+*{
+  box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    margin: 20px;
+    padding: 0;
+  }
+  
+  h1 {
+    margin-top: 0;
+    font-size: 22px;
+  }
+  
+  h2 {
+    margin-top: 0;
+    font-size: 20px;
+  }
+  
+  h3 {
+    margin-top: 0;
+    font-size: 18px;
+  }
+  
+  h4 {
+    margin-top: 0;
+    font-size: 16px;
+  }
+  
+  h5 {
+    margin-top: 0;
+    font-size: 14px;
+  }
+  
+  h6 {
+    margin-top: 0;
+    font-size: 12px;
+  }
+  
+  code {
+    font-size: 1.2em;
+  }
+  
+  ul {
+    padding-inline-start: 20px;
+  }
+  
+ 
+  
+  body {
+    font-family: sans-serif;
+    margin: 20px;
+    padding: 0;
+  }
+  
+  .square {
+    background: #fff;
+    border: 1px solid #999;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 34px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 34px;
+  }
+  
+  .board-row:after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+  
+  .status {
+    margin-bottom: 10px;
+  }
+  .game {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .game-info {
+    margin-left: 20px;
+  } 
+
+  .test{
+    border: 1px black solid;
+    margin-top: 10px;
+  }
+
+
+.bar{
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.squareTetris {
+  background: #17202A;
+  border: 1px solid black;
+  box-shadow:   1px 1px 5px 3px rgba(255, 255, 255, 0.1) inset; 
+  float: left;
+  height: 29px; 
+
+ 
+  
+  width: 29px;
+}
+
+.board-rowTetris {
+  clear: both;
+  content: '';
+  display: table;  
+}
+
+.ContainerRow{
+display: flex;
+align-items: center;
+flex-direction: column;
+ 
+}
+
+
+.O{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  width: 1%;
+
+  
+}
+
+.T {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 2 columns */
+  width: 1%;
+  margin-top: 10px;
+}
+
+.T div:nth-child(4) {
+  grid-column: 2; /* Place le troisième carré à la première colonne */
+}
+
+
+
+.L{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 2 columns */
+  width: 1%;
+margin-top: 10px;
+}
+
+
+.J{
+  display: grid;
+  margin-top: 10px;
+  grid-template-columns: repeat(3, 1fr); /* 2 columns */
+  width: 1%;
+
+}
+
+.J div:nth-child(4) {
+  grid-column: 3; /* Place le troisième carré à la première colonne */
+}
+
+.Z{
+  display: grid;
+  margin-top: 10px;
+  grid-template-columns: repeat(3, 1fr); /* 2 columns */
+  width: 1%;
+
+}
+
+.Z div:nth-child(4) {
+  grid-column: 3; /* Place le troisième carré à la première colonne */
+}
+
+.Z div:nth-child(3) {
+  grid-column: 2; /* Place le troisième carré à la première colonne */
+}
+
+
+.S{
+  display: grid;
+  margin-top: 10px;
+  grid-template-columns: repeat(3, 1fr); /* 2 columns */
+  width: 1%;
+
+}
+
+.S div:nth-child(1) {
+  grid-column: 2; /* Place le troisième carré à la première colonne */
+}
+
+
+
+
+
 
