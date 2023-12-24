@@ -18,7 +18,7 @@ function Row() {
 
 function SquareRow() {
   let square = [];
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 12; i++) {
     square.push(<Plateau key={i}  />);
   }
   return square;
@@ -26,15 +26,20 @@ function SquareRow() {
 
 export default function Tetris() {
     const randomShapeType = getRandomShapeType();
-  return <>
-  <h1>Tetris</h1>
-
-  <div className="ContainerRow">{Row()}
-  
-        
-      
-  </div>
-  <Shape type={randomShapeType}  />
- 
-  </>;
-}
+    return (
+      <>
+        <h1>Tetris</h1>
+        <div className="ContainerShapes">
+        <Shape type={randomShapeType} />
+      </div>
+        <div className="ContainerRow">
+     
+          {Row()}
+         
+        </div>
+        <div className="ButtonPlay">
+        <button className="Play">Play</button>
+        </div>
+      </>
+    );
+  }

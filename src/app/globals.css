@@ -262,6 +262,26 @@ margin-top: 10px;
   grid-column: 2; /* Place le troisième carré à la première colonne */
 }
 
+.ContainerShapes{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Play{
+  border: 1px solid black;
+  border-radius: 8px;
+  width: 10%;
+ 
+}
+
+.ButtonPlay{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
 
 
 

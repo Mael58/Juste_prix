@@ -3,5 +3,5 @@ import Accueil from "@/components/Accueil"
 import Tetris from "@/components/Tetris/Tetris"
 
 export default function Home() {
-  return <><Tetris/></>
+  return <><Accueil/></>
 }
